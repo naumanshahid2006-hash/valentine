@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Valentine</title>
+<style>
+body{
+background:linear-gradient(#ff4b7d,#ff758c);
+font-family:Arial;
+text-align:center;
+color:white;
+padding-top:80px;
+}
+h1{font-size:40px;}
+h2{font-size:28px;}
+button{
+font-size:20px;
+padding:10px 30px;
+margin:15px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+}
+.yes{background:#2ecc71;color:white;}
+.no{background:#e74c3c;color:white;position:absolute;}
+</style>
+
+<script>
+function yes(){
+document.body.innerHTML="<h1>❤️ Yay! ❤️</h1><h2>I’m so lucky to have you 💕</h2>";
+}
+
+function moveNo(btn){
+btn.style.top=Math.random()*400+"px";
+btn.style.left=Math.random()*300+"px";
+}
+</script>
+</head>
+
+<body>
+<h1>Happy Valentine’s Day ❤️</h1>
+<h2>Will you be my Valentine?</h2>
+
+<button class="yes" onclick="yes()">Yes 💖</button>
+<button class="no" onmouseover="moveNo(this)">No 💔</button>
+
+</body>
+</html>
